@@ -24,4 +24,11 @@ contexto = pd.concat([p18[vars_base], p18[vars_contexto]], axis=1)
 contexto["MAT"] = p18[score_mat].mean(axis = 1)
 contexto["LYC"] = p18[score_lyc].mean(axis = 1)
 
-contexto.to_csv("p18.csv")
+contexto[["MAT", "LYC"]] = contexto[["MAT", "LYC"]].mask(contexto[["MAT", "LYC"]] >= 800, 800)
+contexto[["MAT", "LYC"]] = contexto[["MAT", "LYC"]].mask(contexto[["MAT", "LYC"]] <= 200, 200)
+
+perdidos_renglon = contexto.isnull().sum(axis=1) 
+
+contexto = contexto.dropna()
+
+contexto.to_csv("p18.csv", index=False)
