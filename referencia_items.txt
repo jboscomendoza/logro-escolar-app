@@ -1,0 +1,24 @@
+SERV;Tipo de servicio
+TAM_LOC_PRIM;Tamaño de localidad
+SEXO;Sexo
+EDAD_ACC;Edad
+PAB_4;¿Cuántos cuartos se utilizan para dormir en tu casa?
+PAB_11;¿Hasta qué nivel estudió tu papá?
+PAB_12;¿Hasta qué nivel estudió tu mamá?
+PAB_14;¿Sabes hablar una lengua indígena?
+PAB_16;¿Cuántos años fuiste a preescolar?
+PAB_22;¿Cuántos focos hay en tu casa (incluyendo los de las lámparas)?
+PAB_24;¿Tienes los siguientes servicios o aparatos en tu casa? Luz eléctrica
+PAB_25;¿Tienes los siguientes servicios o aparatos en tu casa? Agua potable
+PAB_26;¿Tienes los siguientes servicios o aparatos en tu casa? Drenaje
+PAB_29;¿Tienes los siguientes servicios o aparatos en tu casa? Refrigerador
+PAB_31;¿Tienes los siguientes servicios o aparatos en tu casa? Estufa de gas o estufa eléctrica
+PAB_34;¿Tienes los siguientes servicios o aparatos en tu casa? Acceso a Internet
+PAB_35;Del siguiente listado de bienes, ¿cuántos hay en funcionamiento en tu casa? Computadora o laptop
+PAB_37;Del siguiente listado de bienes, ¿cuántos hay en funcionamiento en tu casa? Automóvil o camioneta
+PAB_38;Del siguiente listado de bienes, ¿cuántos hay en funcionamiento en tu casa? Teléfono móvil o celular
+PAB_39;Del siguiente listado de bienes, ¿cuántos hay en funcionamiento en tu casa? Tableta electrónica (tablet)
+PAB_48;¿Cuántos libros hay en tu casa además de los que usas en la escuela? No incluyas revistas ni periódicos.
+PAB_52;Además de ir a la escuela, ¿asistes a alguna clase de idiomas (inglés u otro)?
+PAB_53;Sin contar las clases de idiomas, ¿tomas fuera de la escuela alguna clase que te ayude en las materias (Matemáticas, Español, etcétera)?
+PAB_85;¿Cuánto tiempo tardas en llegar de tu casa a la escuela?
