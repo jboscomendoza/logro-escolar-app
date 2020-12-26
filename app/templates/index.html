@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Atributos del estudiante</h1>
+
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    {% for i in form %}
+        {% if i.type != "CSRFTokenField" and i.name != "submit" %}
+            <div>
+                {{i.label}}
+                {{i}}
+            </div>
+        {% endif %}
+    {% endfor %}
+    <div>
+        {{form.submit}}
+    </div>
+</form>    
+
+{% endblock %}
