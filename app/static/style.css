@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+html {
+    font-family: "Nunito", sans-serif;
+    background: #fff;
+}
+
+body {
+    max-width: 1000px; 
+    margin: auto;
+    background: #fff;
+    line-height: 1.25;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: .5rem;
+    row-gap: .5rem;
+    max-width: 100%;
+}
+
+.cell-form {
+    padding: .5rem 1rem;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+label > input[type="radio"] {
+    display: none;
+  }
