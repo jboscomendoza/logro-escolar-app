@@ -44,14 +44,13 @@ contexto[["PAB_11", "PAB_12"]] = contexto[["PAB_11", "PAB_12"]].replace(
     )
 
 contexto["PAB_16"] = contexto["PAB_16"].replace(
-    "Sí asistí, pero no sé cuántos años", 
-    u"Asistió, años desconocidos"
+    [u"No fui", u"Sí asistí, pero no sé cuántos años"], 
+    [u"No asistió", u"Asistió, años desconocidos"]
 )
 contexto = contexto[contexto["TAM_LOC_PRIM"] != 'No identificada']
 
 perdidos_renglon = contexto.isnull().sum(axis=1) 
 
 contexto = contexto.dropna()
-
 
 contexto.to_csv("p18.csv", index=False)
