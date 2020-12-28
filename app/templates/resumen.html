@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Resumen de resultados</h1>
+    <p> Puntajes de 200 a 800 con media 500.<p>
+    <div>
+        <h3>Puntaje de Lenguaje y comunicación:</h3>
+        {{ resultado["lyc"] | round }}
+    </div>
+        <div>
+        <h3>Puntaje de Matemáticas:</h3>
+        {{ resultado["mat"] | round }}
+    </div>
+
+</form>    
+
+{% endblock %}

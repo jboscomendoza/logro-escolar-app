@@ -1,29 +1,30 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Atributos del estudiante</h1>
 
-<form action="" method="post" novalidate>
-    {{ form.hidden_tag() }}
-    
-    <div class="grid-form">
-    {% for i in form %}
-        {% if i.type != "CSRFTokenField" and i.name != "submit" %}
-            <div class="cell-form">
-                <div>
-                    <b>{{i.label}}</b>
+<h1>Atributos del estudiante y su contexto</h1>
+
+<form method="post">
+{{ form.hidden_tag() }}
+
+<div class="grid-form">
+        {% for i in form %}
+            {% if i.type != "CSRFTokenField" and i.name != "submit" %}
+                <div class="cell-form">
+                    <div class="label-form">
+                        {{ i.label }}
+                    </div>
+                    <div>
+                        {{ i }}
+                    </div>
                 </div>
-                <div>
-                    {{i}}
-                </div>
-            </div>
-        {% endif %}
-    {% endfor %}
-    <div>
-        {{form.submit}}
-    </div>
+            {% endif %}
+        {% endfor %}
+</div>
+        <div id="submit-form">
+            {{ form.submit }}
+        </div>
+</form>
 
-
-</form>    
 
 {% endblock %}

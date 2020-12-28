@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
 
 html {
-    font-family: "Nunito", sans-serif;
+    font-family: "Quicksand", sans-serif;
     background: #fff;
 }
 
@@ -26,6 +26,20 @@ body {
     border-radius: 5px;
 }
 
-label > input[type="radio"] {
-    display: none;
-  }
+.label-form {
+    font-weight: 500;
+}
+
+option {
+    width: 120px;
+    height: 2rem;
+}
+
+#submit {
+    width: 240px;
+    height: 2rem;
+}
+
+div #submit-form {
+    margin:auto;
+}
