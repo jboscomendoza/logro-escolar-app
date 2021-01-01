@@ -7,7 +7,7 @@
     <div class="grid-resumen">
         <div>
             <div>
-                <h3>Puntaje de Lenguaje y comunicación:</h3>
+                <h3>Puntaje de Lenguaje y comunicación</h3>
                 {{ resultado["LYC"] | round }}
             </div>
             <div>
@@ -15,7 +15,7 @@
                 <ul>
                 {% for i in comp_lyc %}
                     <li>
-                        {{i["decil"]}} {{'%'}} de estudiantes ({{ i["serv"] }})
+                        {{i["decil"]}}{{'%'}} de estudiantes ({{ i["serv"] }})
                     </li> 
                 {% endfor %}
                 </ul>
@@ -29,7 +29,7 @@
 
         <div>
             <div>
-                <h3>Puntaje de Matemáticas:</h3>
+                <h3>Puntaje de Matemáticas</h3>
                 {{ resultado["MAT"] | round }}
             </div>
             <div>
@@ -37,7 +37,7 @@
                     <ul>
                     {% for i in comp_mat %}
                         <li>
-                            {{i["decil"]}} {{'%'}} de estudiantes ({{i["serv"]}})
+                            {{i["decil"]}}{{'%'}} de estudiantes ({{i["serv"]}})
                         </li> 
                     {% endfor %}
                     </ul>

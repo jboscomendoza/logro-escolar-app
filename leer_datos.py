@@ -62,9 +62,12 @@ scores_group = scores.groupby("SERV").mean().reset_index()
 scores.to_csv("scores.csv", index=False)
 scores_group.to_csv("scores_group.csv", index=False)
 
+
+
 # Cuantiles
 def extraer_cuantiles(df, asignatura):
-    cortes = [i / 100 for i in range(0, 110, 10)]
+    #cortes = [i / 100 for i in range(0, 110, 10)]
+    cortes = np.arange(0, 1.05, .05)
     servicios = list(df["SERV"].unique())
     
     lista_cuantiles = []
@@ -82,7 +85,7 @@ def extraer_cuantiles(df, asignatura):
     cuantiles_todo = pd.concat(lista_cuantiles)
 
     cuantiles_todo = cuantiles_todo.rename(columns={"index":"decil"})
-    cuantiles_todo["decil"] = (cuantiles_todo["decil"] * 100)
+    cuantiles_todo["decil"] = np.round(cuantiles_todo["decil"] * 100)
     return cuantiles_todo
 
 

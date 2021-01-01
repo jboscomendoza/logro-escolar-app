@@ -1,56 +1,106 @@
 decil,MAT,SERV
 0.0,224.0,Nacional
+5.0,378.0,Nacional
 10.0,400.0,Nacional
+15.0,415.0,Nacional
 20.0,429.0,Nacional
+25.0,441.0,Nacional
 30.0,453.0,Nacional
+35.0,465.0,Nacional
 40.0,478.0,Nacional
+45.0,490.0,Nacional
 50.0,503.0,Nacional
+55.0,517.0,Nacional
 60.0,532.0,Nacional
+65.0,547.0,Nacional
 70.0,564.0,Nacional
+75.0,584.0,Nacional
 80.0,606.0,Nacional
+85.0,633.0,Nacional
 90.0,665.0,Nacional
+95.0,713.0,Nacional
 100.0,800.0,Nacional
 0.0,274.0,Comunitaria
+5.0,342.0,Comunitaria
 10.0,360.8,Comunitaria
+15.0,373.0,Comunitaria
 20.0,385.0,Comunitaria
+25.0,393.0,Comunitaria
 30.0,403.0,Comunitaria
+35.0,410.8,Comunitaria
 40.0,419.0,Comunitaria
+45.0,426.0,Comunitaria
 50.0,437.0,Comunitaria
+55.0,447.0,Comunitaria
 60.0,455.0,Comunitaria
+65.0,469.0,Comunitaria
 70.0,479.0,Comunitaria
+75.0,494.0,Comunitaria
 80.0,510.0,Comunitaria
+85.0,531.8000000000001,Comunitaria
 90.0,552.2,Comunitaria
+95.0,594.2,Comunitaria
 100.0,800.0,Comunitaria
 0.0,224.0,General Pública
+5.0,378.0,General Pública
 10.0,399.0,General Pública
+15.0,414.0,General Pública
 20.0,427.0,General Pública
+25.0,438.0,General Pública
 30.0,450.0,General Pública
+35.0,461.0,General Pública
 40.0,472.0,General Pública
+45.0,484.0,General Pública
 50.0,496.0,General Pública
+55.0,509.0,General Pública
 60.0,523.0,General Pública
+65.0,538.0,General Pública
 70.0,554.0,General Pública
+75.0,572.0,General Pública
 80.0,594.0,General Pública
+85.0,619.0,General Pública
 90.0,651.0,General Pública
+95.0,696.0,General Pública
 100.0,800.0,General Pública
 0.0,285.0,Privada
+5.0,425.0,Privada
 10.0,455.0,Privada
+15.0,476.0,Privada
 20.0,493.0,Privada
+25.0,510.0,Privada
 30.0,525.0,Privada
+35.0,539.0,Privada
 40.0,553.0,Privada
+45.0,567.0,Privada
 50.0,582.0,Privada
+55.0,596.0,Privada
 60.0,611.0,Privada
+65.0,629.0,Privada
 70.0,646.0,Privada
+75.0,665.0,Privada
 80.0,686.0,Privada
+85.0,708.5500000000011,Privada
 90.0,737.0,Privada
+95.0,773.8500000000004,Privada
 100.0,800.0,Privada
 0.0,244.0,Indígena
+5.0,349.0,Indígena
 10.0,369.0,Indígena
+15.0,382.0,Indígena
 20.0,393.0,Indígena
+25.0,404.0,Indígena
 30.0,413.0,Indígena
+35.0,421.0,Indígena
 40.0,429.0,Indígena
+45.0,438.0,Indígena
 50.0,448.0,Indígena
+55.0,459.0,Indígena
 60.0,470.0,Indígena
+65.0,483.0,Indígena
 70.0,496.6999999999998,Indígena
+75.0,512.0,Indígena
 80.0,533.0,Indígena
+85.0,558.0,Indígena
 90.0,586.9000000000001,Indígena
+95.0,638.0,Indígena
 100.0,800.0,Indígena

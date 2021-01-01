@@ -1,12 +1,15 @@
+from flask import render_template, request, redirect, url_for
+from app import app
+from app.forms import Atributos
+
 import numpy as np
 import pandas as pd
 
-from flask import render_template, request, redirect, url_for
-
-from app import app
-from app.forms import Atributos
 from catboost import CatBoostRegressor
-from bokeh.plotting import figure
+from bokeh.plotting import figure, show
+from bokeh.io import output_file
+from bokeh.layouts import column
+from bokeh.models import ColumnDataSource, CDSView, GroupFilter
 from bokeh.embed import components
 
 
@@ -15,15 +18,17 @@ modelo_lyc.load_model("model_lyc.cbm")
 modelo_mat = CatBoostRegressor()
 modelo_mat.load_model("model_mat.cbm")
 
-cuantiles_lyc = pd.read_csv("cuantiles_lyc.csv")
-cuantiles_mat = pd.read_csv("cuantiles_mat.csv")
+CUANTILES_LYC = pd.read_csv("CUANTILES_LYC.csv")
+CUANTILES_MAT = pd.read_csv("CUANTILES_MAT.csv")
+
+COLORES = ["#70d6ff", "#ff70a6", "#ff9770", "#ffd670", "#99ff50"]
 
 
 def comparar_cuantiles(score, asignatura):
     if asignatura == "MAT":
-        df = cuantiles_mat
+        df = CUANTILES_MAT
     elif asignatura == "LYC":
-        df = cuantiles_lyc
+        df = CUANTILES_LYC
     servicios = df["SERV"].unique()
     
     lista_cuantiles = []
@@ -38,6 +43,25 @@ def comparar_cuantiles(score, asignatura):
         lista_cuantiles.append(cual)
 
     return lista_cuantiles
+
+
+def crear_plot_dist(asignatura, score_actual):
+    if asignatura == "MAT":
+        df = CUANTILES_MAT
+    elif asignatura == "LYC":
+        df = CUANTILES_LYC
+    
+    plot_dist = figure(plot_width=450, plot_height=500, toolbar_location="below")
+    
+    for i, j in zip(df["SERV"].unique(), COLORES):
+        fuente = ColumnDataSource(df[df["SERV"] == i])
+        plot_dist.line("decil", asignatura, source=fuente, color = j, legend_label=i)
+    
+    plot_dist.ray(x=[0], y=[score_actual], length=100, angle=0, line_width=2, color="pink")
+
+    plot_dist.legend.location = 'top_left'
+
+    return plot_dist
 
 
 @app.route('/', methods=["GET", "POST"])
@@ -68,22 +92,16 @@ def resultado(atributos):
 
     return redirect(url_for("resumen", resultado=resultado))
 
+
 @app.route("/resumen/<resultado>", methods=["GET"])
 def resumen(resultado):
     resultado = eval(resultado)
     comp_mat = comparar_cuantiles(resultado["MAT"], "MAT")
     comp_lyc = comparar_cuantiles(resultado["LYC"], "LYC")
-
-    x_lyc = list(cuantiles_lyc["decil"])
-    y_lyc = list(cuantiles_lyc["LYC"][cuantiles_lyc["SERV"] == "Nacional"])
-    plot_lyc = figure(plot_width=400, plot_height=400, title="", toolbar_location="below")
-    plot_lyc.line(x_lyc, y_lyc)
-
-    x_mat = list(cuantiles_mat["decil"])
-    y_mat = list(cuantiles_mat["MAT"][cuantiles_mat["SERV"] == "Nacional"])
-    plot_mat = figure(plot_width=400, plot_height=400, title="", toolbar_location="below")
-    plot_mat.line(x_mat, y_mat)
-
+    
+    plot_lyc = crear_plot_dist("LYC", resultado["LYC"])
+    plot_mat = crear_plot_dist("MAT", resultado["MAT"])
+    
     script_lyc, div_lyc = components(plot_lyc)
     script_mat, div_mat = components(plot_mat)
     
