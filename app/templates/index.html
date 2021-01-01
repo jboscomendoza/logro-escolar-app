@@ -7,24 +7,129 @@
 <form method="post">
 {{ form.hidden_tag() }}
 
-<div class="grid-form">
-        {% for i in form %}
-            {% if i.type != "CSRFTokenField" and i.name != "submit" %}
-                <div class="cell-form">
-                    <div class="label-form">
-                        {{ i.label }}
-                    </div>
-                    <div>
-                        {{ i }}
-                    </div>
-                </div>
-            {% endif %}
-        {% endfor %}
-</div>
-        <div id="submit-form">
-            {{ form.submit }}
+    <h3>Atributos del estudiante</h3>
+    <div class="grid-form">
+        <div class="cell-form">
+            <div>{{ form.SEXO.label }}</div>
+            <div>{{ form.SEXO }}</div>
         </div>
+        <div class="cell-form">
+            <div>{{ form.EDAD_ACC.label }}</div>
+            <div>{{ form.EDAD_ACC }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_14.label }}</div>
+            <div>{{ form.PAB_14 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_16.label }}</div>
+            <div>{{ form.PAB_16 }}</div>
+        </div>
+    </div>
+
+    <h3>Atributos de los padres</h3>
+    <div class="grid-form">
+        <div class="cell-form">
+            <div>{{ form.PAB_11.label }}</div>
+            <div>{{ form.PAB_11 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_12.label }}</div>
+            <div>{{ form.PAB_12 }}</div>
+        </div>
+    </div>
+
+    <h3>Atributos de la localidad</h3>
+    <div class="grid-form">
+        <div class="cell-form">
+            <div>{{ form.SERV.label }}</div>
+            <div>{{ form.SERV }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.TAM_LOC_PRIM.label }}</div>
+            <div>{{ form.TAM_LOC_PRIM }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_85.label }}</div>
+            <div>{{ form.PAB_85 }}</div>
+        </div>
+    </div>
+
+    <h3>Bienes y servicios</h3>
+    <div class="grid-form">
+        <div class="cell-form">
+            <div>{{ form.PAB_4.label }}</div>
+            <div>{{ form.PAB_4 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_22.label }}</div>
+            <div>{{ form.PAB_22 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_24.label }}</div>
+            <div>{{ form.PAB_24 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_25.label }}</div>
+            <div>{{ form.PAB_25 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_26.label }}</div>
+            <div>{{ form.PAB_26 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_29.label }}</div>
+            <div>{{ form.PAB_29 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_31.label }}</div>
+            <div>{{ form.PAB_31 }}</div>
+        </div>
+
+        <div class="cell-form">
+            <div>{{ form.PAB_37.label }}</div>
+            <div>{{ form.PAB_37 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_38.label }}</div>
+            <div>{{ form.PAB_38 }}</div>
+        </div>
+
+    </div>
+
+    <h3>Recursos para el aprendizaje</h3>
+    <div class="grid-form">
+        <div class="cell-form">
+            <div>{{ form.PAB_34.label }}</div>
+            <div>{{ form.PAB_34 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_35.label }}</div>
+            <div>{{ form.PAB_35 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_39.label }}</div>
+            <div>{{ form.PAB_39 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_48.label }}</div>
+            <div>{{ form.PAB_48 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_52.label }}</div>
+            <div>{{ form.PAB_52 }}</div>
+        </div>
+        <div class="cell-form">
+            <div>{{ form.PAB_53.label }}</div>
+            <div>{{ form.PAB_53 }}</div>
+        </div>
+    </div>
+
+    <div id="submit-form">
+        {{ form.submit }}
+    </div>
 </form>
+
 
 
 {% endblock %}

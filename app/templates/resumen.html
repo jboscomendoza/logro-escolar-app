@@ -1,17 +1,54 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Resumen de resultados</h1>
-    <p> Puntajes de 200 a 800 con media 500.<p>
-    <div>
-        <h3>Puntaje de Lenguaje y comunicación:</h3>
-        {{ resultado["lyc"] | round }}
-    </div>
-        <div>
-        <h3>Puntaje de Matemáticas:</h3>
-        {{ resultado["mat"] | round }}
-    </div>
 
-</form>    
+    <h1>Resumen de resultados</h1>
+    
+    <div class="grid-resumen">
+        <div>
+            <div>
+                <h3>Puntaje de Lenguaje y comunicación:</h3>
+                {{ resultado["LYC"] | round }}
+            </div>
+            <div>
+                <h3>Puntaje en Lenguaje y Comunicación mejor que...</h3>
+                <ul>
+                {% for i in comp_lyc %}
+                    <li>
+                        {{i["decil"]}} {{'%'}} de estudiantes ({{ i["serv"] }})
+                    </li> 
+                {% endfor %}
+                </ul>
+            </div>
+            <div>
+                <h3>Distribución acumulada</h3>
+                {{ div_mat|safe }}
+                {{ script_mat|safe }}
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h3>Puntaje de Matemáticas:</h3>
+                {{ resultado["MAT"] | round }}
+            </div>
+            <div>
+                <h3>Puntaje en Matemáticas mejor que...</h3>
+                    <ul>
+                    {% for i in comp_mat %}
+                        <li>
+                            {{i["decil"]}} {{'%'}} de estudiantes ({{i["serv"]}})
+                        </li> 
+                    {% endfor %}
+                    </ul>
+            </div>
+            <div>
+                <h3>Distribución acumulada</h3>
+                {{ div_lyc|safe }}
+                {{ script_lyc|safe }}
+            </div>
+        </div>        
+
+    </div>
 
 {% endblock %}

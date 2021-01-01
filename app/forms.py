@@ -49,7 +49,7 @@ class Atributos(FlaskForm):
     PAB_37 = SelectField(u"Cantidad de automóviles en casa", choices=CANTIDAD)
     PAB_38 = SelectField(u"Cantidad de teléfonos móviles o celulares en casa", choices=CANTIDAD)
     PAB_39 = SelectField(u"Cantidad de tabletas en casa", choices=CANTIDAD)
-    PAB_48 = SelectField(u"Cantidad de libros en casa?", choices=[
+    PAB_48 = SelectField(u"Cantidad de libros en casa", choices=[
         'Ninguno', 'Entre 1 y 25', 'Entre 26 y 50', 'Entre 51 y 100', 'Más de 100', 
     ])
     PAB_52 = SelectField(u"Asiste a clases de idiomas (inglés u otro)", choices=NO_SI)

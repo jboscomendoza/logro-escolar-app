@@ -73,8 +73,8 @@ def extraer_cuantiles(df, asignatura):
     cuantiles_nac["SERV"] = "Nacional"
     lista_cuantiles.append(cuantiles_nac)
 
-    for i in contexto["SERV"].unique():
-        por_serv = contexto[contexto["SERV"] == i]
+    for i in servicios:
+        por_serv = df[df["SERV"] == i]
         por_serv = por_serv[asignatura].quantile(cortes).reset_index()
         por_serv["SERV"] = i
         lista_cuantiles.append(por_serv)
