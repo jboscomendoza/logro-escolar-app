@@ -2,134 +2,212 @@
 
 {% block content %}
 
+
+<div class="container">
 <h1>Atributos del estudiante y su contexto</h1>
 
 <form method="post">
 {{ form.hidden_tag() }}
 
     <h3>Atributos del estudiante</h3>
-    <div class="grid-form">
-        <div class="cell-form">
-            <div>{{ form.SEXO.label }}</div>
-            <div>{{ form.SEXO }}</div>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.SEXO.label }}
+                    {{ form.SEXO(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.EDAD_ACC.label }}
+                    {{ form.EDAD_ACC(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_14.label }}
+                    {{ form.PAB_14(class_="form-control") }}
+                </div>
+            </div>
         </div>
-        <div class="cell-form">
-            <div>{{ form.EDAD_ACC.label }}</div>
-            <div>{{ form.EDAD_ACC }}</div>
-        </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_14.label }}</div>
-            <div>{{ form.PAB_14 }}</div>
-        </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_16.label }}</div>
-            <div>{{ form.PAB_16 }}</div>
+        <div class="row">
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_16.label }}
+                    {{ form.PAB_16(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_14.label }}
+                    {{ form.PAB_14(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_14.label }}
+                    {{ form.PAB_14(class_="form-control") }}
+                </div>
+            </div>
         </div>
     </div>
 
     <h3>Atributos de los padres</h3>
-    <div class="grid-form">
-        <div class="cell-form">
-            <div>{{ form.PAB_11.label }}</div>
-            <div>{{ form.PAB_11 }}</div>
-        </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_12.label }}</div>
-            <div>{{ form.PAB_12 }}</div>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_11.label }}
+                    {{ form.PAB_11(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_12.label }}
+                    {{ form.PAB_12(class_="form-control") }}
+                </div>
+            </div>
         </div>
     </div>
 
     <h3>Atributos de la localidad</h3>
-    <div class="grid-form">
-        <div class="cell-form">
-            <div>{{ form.SERV.label }}</div>
-            <div>{{ form.SERV }}</div>
-        </div>
-        <div class="cell-form">
-            <div>{{ form.TAM_LOC_PRIM.label }}</div>
-            <div>{{ form.TAM_LOC_PRIM }}</div>
-        </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_85.label }}</div>
-            <div>{{ form.PAB_85 }}</div>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.SERV.label }}
+                    {{ form.SERV(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.TAM_LOC_PRIM.label }}
+                    {{ form.TAM_LOC_PRIM(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_85.label }}
+                    {{ form.PAB_85(class_="form-control") }}
+                </div>
+            </div>
         </div>
     </div>
 
     <h3>Bienes y servicios</h3>
-    <div class="grid-form">
-        <div class="cell-form">
-            <div>{{ form.PAB_4.label }}</div>
-            <div>{{ form.PAB_4 }}</div>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_4.label }}
+                    {{ form.PAB_4(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_22.label }}
+                    {{ form.PAB_22(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_24.label }}
+                    {{ form.PAB_24(class_="form-control") }}
+                </div>
+            </div>
         </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_22.label }}</div>
-            <div>{{ form.PAB_22 }}</div>
+        <div class="row">
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_25.label }}
+                    {{ form.PAB_25(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_26.label }}
+                    {{ form.PAB_26(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_29.label }}
+                    {{ form.PAB_29(class_="form-control") }}
+                </div>
+            </div>
         </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_24.label }}</div>
-            <div>{{ form.PAB_24 }}</div>
+        <div class="row">
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_31.label }}
+                    {{ form.PAB_31(class_="form-control d-flex flex-wrap align-content-stretch") }}
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_37.label }}
+                    {{ form.PAB_37(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="form-group">
+                    {{ form.PAB_38.label }}
+                    {{ form.PAB_38(class_="form-control d-flex flex-wrap align-content-stretch") }}
+                </div>
+            </div>
         </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_25.label }}</div>
-            <div>{{ form.PAB_25 }}</div>
-        </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_26.label }}</div>
-            <div>{{ form.PAB_26 }}</div>
-        </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_29.label }}</div>
-            <div>{{ form.PAB_29 }}</div>
-        </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_31.label }}</div>
-            <div>{{ form.PAB_31 }}</div>
-        </div>
-
-        <div class="cell-form">
-            <div>{{ form.PAB_37.label }}</div>
-            <div>{{ form.PAB_37 }}</div>
-        </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_38.label }}</div>
-            <div>{{ form.PAB_38 }}</div>
-        </div>
-
     </div>
 
     <h3>Recursos para el aprendizaje</h3>
-    <div class="grid-form">
-        <div class="cell-form">
-            <div>{{ form.PAB_34.label }}</div>
-            <div>{{ form.PAB_34 }}</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="cell-form">
+                    <div>{{ form.PAB_34.label }}</div>
+                    <div>{{ form.PAB_34(class_="form-control") }}</div>
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="cell-form">
+                    <div>{{ form.PAB_35.label }}</div>
+                    <div>{{ form.PAB_35(class_="form-control") }}</div>
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="cell-form">
+                    <div>{{ form.PAB_39.label }}</div>
+                    <div>{{ form.PAB_39(class_="form-control") }}</div>
+                </div>
+            </div>
         </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_35.label }}</div>
-            <div>{{ form.PAB_35 }}</div>
-        </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_39.label }}</div>
-            <div>{{ form.PAB_39 }}</div>
-        </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_48.label }}</div>
-            <div>{{ form.PAB_48 }}</div>
-        </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_52.label }}</div>
-            <div>{{ form.PAB_52 }}</div>
-        </div>
-        <div class="cell-form">
-            <div>{{ form.PAB_53.label }}</div>
-            <div>{{ form.PAB_53 }}</div>
+        <div class="row">
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="cell-form">
+                    <div>{{ form.PAB_48.label }}</div>
+                    <div>{{ form.PAB_48(class_="form-control") }}</div>
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="cell-form">
+                    <div>{{ form.PAB_52.label }}</div>
+                    <div>{{ form.PAB_52(class_="form-control") }}</div>
+                </div>
+            </div>
+            <div class="col d-flex flex-wrap align-content-end">
+                <div class="cell-form">
+                    <div>{{ form.PAB_53.label }}</div>
+                    <div>{{ form.PAB_53(class_="form-control") }}</div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="submit-form">
-        {{ form.submit }}
+        {{ form.submit(class="btn btn-primary") }}
     </div>
 </form>
 
 
-
+</div>
 {% endblock %}
