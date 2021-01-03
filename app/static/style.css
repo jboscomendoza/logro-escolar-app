@@ -12,6 +12,10 @@ body {
     line-height: 1.25;
 }
 
+h3 {
+    padding:.5rem 0 .5rem 1rem;
+}
+
 .grid-form {
     display: grid;
     grid-template-columns: repeat(4, 25%);
