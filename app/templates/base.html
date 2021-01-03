@@ -13,6 +13,9 @@
 <head>
   {{ bootstrap.load_css() }}
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   {% if title %}
     <title>{{ title }} - Logro escolar</title>
   {% else %}
@@ -20,7 +23,7 @@
   {% endif %}
 </head>
 
-<body style="margin:auto; font-family:Quicksand">
+<body style="margin:auto; font-family:Quicksand; font-size:1.15rem;">
 
 {% block navbar %}
 {{ bootstrap.load_js() }}
