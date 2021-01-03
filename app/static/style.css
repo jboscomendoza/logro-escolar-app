@@ -41,11 +41,3 @@ option {
     height: 2rem;
 }
 
-#submit {
-    width: 240px;
-    height: 2rem;
-}
-
-div #submit-form {
-    margin:20px;
-}
