@@ -18,8 +18,8 @@ modelo_lyc.load_model("model_lyc.cbm")
 modelo_mat = CatBoostRegressor()
 modelo_mat.load_model("model_mat.cbm")
 
-CUANTILES_LYC = pd.read_csv("CUANTILES_LYC.csv")
-CUANTILES_MAT = pd.read_csv("CUANTILES_MAT.csv")
+CUANTILES_LYC = pd.read_csv("cuantiles_lyc.csv")
+CUANTILES_MAT = pd.read_csv("cuantiles_mat.csv")
 
 COLORES = ["#000000", "#7d3c98", "#f39c12", "#3498db", "#2ecc71"]
 
