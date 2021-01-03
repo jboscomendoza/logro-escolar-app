@@ -21,7 +21,7 @@ modelo_mat.load_model("model_mat.cbm")
 CUANTILES_LYC = pd.read_csv("CUANTILES_LYC.csv")
 CUANTILES_MAT = pd.read_csv("CUANTILES_MAT.csv")
 
-COLORES = ["#70d6ff", "#ff70a6", "#ff9770", "#ffd670", "#99ff50"]
+COLORES = ["#000000", "#7d3c98", "#f39c12", "#3498db", "#2ecc71"]
 
 
 def comparar_cuantiles(score, asignatura):
@@ -57,7 +57,10 @@ def crear_plot_dist(asignatura, score_actual):
         fuente = ColumnDataSource(df[df["SERV"] == i])
         plot_dist.line("decil", asignatura, source=fuente, color = j, legend_label=i)
     
-    plot_dist.ray(x=[0], y=[score_actual], length=100, angle=0, line_width=2, color="pink")
+    plot_dist.ray(
+        x=[0], y=[score_actual], length=100, angle=0, 
+        line_width=2, color="#e74c3c", legend_label="Puntaje obtenido"
+    )
 
     plot_dist.legend.location = 'top_left'
 
