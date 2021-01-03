@@ -67,7 +67,7 @@ scores_group.to_csv("scores_group.csv", index=False)
 # Cuantiles
 def extraer_cuantiles(df, asignatura):
     #cortes = [i / 100 for i in range(0, 110, 10)]
-    cortes = np.arange(0, 1.05, .05)
+    cortes = np.arange(0, 1, .01)
     servicios = list(df["SERV"].unique())
     
     lista_cuantiles = []
