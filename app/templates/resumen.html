@@ -6,64 +6,71 @@
 
 <div class="container">
     <div class="row">
-        <h3 class="col-6 text-light bg-dark">
-            Lenguaje y comunicación
-        </h3>
-        <h3 class="col-6 text-light bg-dark">
-            Matemáticas
-        </h3>
-    </div>
-
-    <div class="row">
-        <h3 class="col-6">
-            {{resultado["LYC"]|round}}
-        </h3>
-        <h3 class="col-6">
-            {{resultado["MAT"]|round}}
-        </h3>
-    </div>
-    
-    <div class="row">
-        <h3 class="col-12 text-light bg-dark">
-            Puntaje mejor que...
-        </h3>
-    </div>
-
-    <div class="row">
-        <div class="col-6">
-            {% for i in comp_lyc %}
-                <div>
-                {{i["decil"]}}{{'%'}} de estudiantes ({{i["serv"]}})
-                </div>
-            {% endfor %}
-        </div>
-        <div class="col-6">
-            {% for i in comp_mat %}
-            <div>
-                {{i["decil"]}}{{'%'}} de estudiantes ({{i["serv"]}})
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-
-    <div class="row">
-        <h3 class="col-12 text-light bg-dark">
-            Distribución acumulada
-        </h3>
-    </div>
-
-    <div class="row">
         <div class="col-12 col-lg-6">
-            <div style="display:inline-block">
-            {{ div_lyc|safe }}
-            {{ script_lyc|safe }}
+            <h3 class="col-12 text-light bg-dark">
+                Lenguaje y comunicación
+            </h3>
+            <h3 class="col-12">
+                {{resultado["LYC"]|round}}
+            </h3>
+            <h3 class="col-12 text-light bg-dark">
+                Estudiantes con puntaje menor al obtenido
+            </h3>
+            <div class="col-12">
+                {% for i in comp_lyc %}
+                    <div class="row">
+                        <div class="col-8">
+                            {{i["serv"]}}
+                        </div>
+                        <div class="col-4">
+                            {{i["decil"]}}{{'%'}}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <h3 class="col-12 text-light bg-dark">
+                Distribución de puntajes
+            </h3>
+            <div class="col-12">
+                {{ div_lyc|safe }}
+                {{ script_lyc|safe }}
             </div>
         </div>
+
         <div class="col-12 col-lg-6">
-            {{ div_mat|safe }}
-            {{ script_mat|safe }}
+            <h3 class="col-12 text-light bg-dark">
+                Matemáticas
+            </h3>
+            <h3 class="col-12">
+                {{resultado["MAT"]|round}}
+            </h3>
+            <h3 class="col-12 text-light bg-dark">
+                Estudiantes con puntaje menor al obtenido
+            </h3>
+            <div class="col-12">
+                {% for i in comp_mat %}
+                    <div class="row">
+                        <div class="col-8">
+                            {{i["serv"]}}
+                        </div>
+                        <div class="col-4">
+                            {{i["decil"]}}{{'%'}}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <h3 class="col-12 text-light bg-dark">
+                Distribución de puntajes
+            </h3>
+            <div class="col-12 col-lg-6">
+                {{ div_mat|safe }}
+                {{ script_mat|safe }}
+            </div>
         </div>
     </div>
 </div>
+
+
+
 
 {% endblock %}

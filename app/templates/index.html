@@ -4,7 +4,7 @@
 
 
 <div class="container">
-<h1>Contexto del estudiante</h1>
+<h1>Sexto de primaria - contexto del estudiante</h1>
 
 <form method="post">
 {{ form.hidden_tag() }}
@@ -70,7 +70,7 @@
     </div>
 
     <h3 class="text-light bg-dark">
-        Bienes y servicios
+        Bienes y servicios en casa
     </h3>
     <div class="container">
         <div class="row">
@@ -98,8 +98,6 @@
                 {{ form.PAB_29.label }}
                 {{ form.PAB_29(class_="form-control") }}
             </div>
-        </div>
-        <div class="row">
             <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
                 {{ form.PAB_31.label }}
                 {{ form.PAB_31(class_="form-control d-flex flex-wrap align-content-stretch") }}
@@ -116,7 +114,7 @@
     </div>
 
     <h3 class="text-light bg-dark">
-        Recursos para el aprendizaje
+        Recursos para el aprendizaje en casa
     </h3>
     <div class="container">
         <div class="row">
@@ -136,6 +134,14 @@
                 {{ form.PAB_48.label }}
                 {{ form.PAB_48(class_="form-control") }}
             </div>
+        </div>
+    </div>
+
+    <h3 class="text-light bg-dark">
+        Actividades extra curriculares
+    </h3>
+    <div class="container">
+        <div class="row">
             <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
                 {{ form.PAB_52.label }}
                 {{ form.PAB_52(class_="form-control") }}

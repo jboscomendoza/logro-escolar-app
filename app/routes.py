@@ -59,7 +59,8 @@ def crear_plot_dist(asignatura, score_actual):
     
     plot_dist.ray(
         x=[0], y=[score_actual], length=100, angle=0, 
-        line_width=2, color="#e74c3c", legend_label="Puntaje obtenido"
+        line_width=1.5, color="#e74c3c", line_dash="dashed",
+        legend_label="Puntaje obtenido"
     )
 
     plot_dist.legend.location = 'top_left'
