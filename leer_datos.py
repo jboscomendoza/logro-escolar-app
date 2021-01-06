@@ -53,7 +53,7 @@ perdidos_renglon = contexto.isnull().sum(axis=1)
 
 contexto = contexto.dropna()
 
-contexto.to_csv("p18.csv", index=False)
+contexto.to_csv("pri.csv", index=False)
 
 
 scores = contexto[["SERV", "MAT", "LYC"]]
@@ -61,7 +61,6 @@ scores_group = scores.groupby("SERV").mean().reset_index()
 
 scores.to_csv("scores.csv", index=False)
 scores_group.to_csv("scores_group.csv", index=False)
-
 
 
 # Cuantiles
@@ -90,7 +89,7 @@ def extraer_cuantiles(df, asignatura):
 
 
 cuantiles_mat = extraer_cuantiles(contexto, "MAT")
-cuantiles_mat.to_csv("cuantiles_mat.csv", index=False)
+cuantiles_mat.to_csv("cuantiles_pri_mat.csv", index=False)
 
 cuantiles_lyc = extraer_cuantiles(contexto, "LYC")
-cuantiles_lyc.to_csv("cuantiles_lyc.csv", index=False)
+cuantiles_lyc.to_csv("cuantiles_pri_lyc.csv", index=False)

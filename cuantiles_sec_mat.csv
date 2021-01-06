@@ -1,0 +1,601 @@
+decil,MAT,SERV
+0.0,200.0,Nacional
+1.0,286.0,Nacional
+2.0,317.0,Nacional
+3.0,331.0,Nacional
+4.0,342.0,Nacional
+5.0,350.0,Nacional
+6.0,358.0,Nacional
+7.0,364.0,Nacional
+8.0,369.0,Nacional
+9.0,374.0,Nacional
+10.0,379.0,Nacional
+11.0,383.0,Nacional
+12.0,387.0,Nacional
+13.0,391.0,Nacional
+14.0,395.0,Nacional
+15.0,398.0,Nacional
+16.0,401.0,Nacional
+17.0,405.0,Nacional
+18.0,408.0,Nacional
+19.0,411.0,Nacional
+20.0,414.0,Nacional
+21.0,417.0,Nacional
+22.0,420.0,Nacional
+23.0,423.0,Nacional
+24.0,426.0,Nacional
+25.0,429.0,Nacional
+26.0,431.0,Nacional
+27.0,434.0,Nacional
+28.0,436.0,Nacional
+29.0,439.0,Nacional
+30.0,442.0,Nacional
+31.0,444.0,Nacional
+32.0,447.0,Nacional
+33.0,450.0,Nacional
+34.0,452.0,Nacional
+35.0,455.0,Nacional
+36.0,458.0,Nacional
+37.0,460.0,Nacional
+38.0,463.0,Nacional
+39.0,466.0,Nacional
+40.0,468.0,Nacional
+41.0,471.0,Nacional
+42.0,473.0,Nacional
+43.0,476.0,Nacional
+44.0,479.0,Nacional
+45.0,481.0,Nacional
+46.0,484.0,Nacional
+47.0,487.0,Nacional
+48.0,490.0,Nacional
+49.0,492.0,Nacional
+50.0,495.0,Nacional
+51.0,498.0,Nacional
+52.0,501.0,Nacional
+53.0,504.0,Nacional
+54.0,507.0,Nacional
+55.0,509.0,Nacional
+56.0,512.0,Nacional
+57.0,515.0,Nacional
+58.0,518.0,Nacional
+59.0,522.0,Nacional
+60.0,525.0,Nacional
+61.0,528.0,Nacional
+62.0,531.0,Nacional
+63.0,534.0,Nacional
+64.0,538.0,Nacional
+65.0,541.0,Nacional
+66.0,544.0,Nacional
+67.0,548.0,Nacional
+68.0,552.0,Nacional
+69.0,555.0,Nacional
+70.0,559.0,Nacional
+71.0,563.0,Nacional
+72.0,567.0,Nacional
+73.0,572.0,Nacional
+74.0,576.0,Nacional
+75.0,580.0,Nacional
+76.0,585.0,Nacional
+77.0,590.0,Nacional
+78.0,595.0,Nacional
+79.0,599.0,Nacional
+80.0,604.0,Nacional
+81.0,609.0,Nacional
+82.0,615.0,Nacional
+83.0,621.0,Nacional
+84.0,627.0,Nacional
+85.0,633.0,Nacional
+86.0,640.0,Nacional
+87.0,647.0,Nacional
+88.0,655.0,Nacional
+89.0,662.0,Nacional
+90.0,671.0,Nacional
+91.0,680.0,Nacional
+92.0,690.0,Nacional
+93.0,701.0,Nacional
+94.0,712.0,Nacional
+95.0,725.0,Nacional
+96.0,741.0,Nacional
+97.0,759.0,Nacional
+98.0,781.0,Nacional
+99.0,800.0,Nacional
+0.0,200.0,General Pública
+1.0,287.0,General Pública
+2.0,318.0,General Pública
+3.0,331.0,General Pública
+4.0,342.0,General Pública
+5.0,350.0,General Pública
+6.0,356.1199999999999,General Pública
+7.0,363.0,General Pública
+8.0,368.0,General Pública
+9.0,373.0,General Pública
+10.0,377.0,General Pública
+11.0,381.0,General Pública
+12.0,385.0,General Pública
+13.0,388.0,General Pública
+14.0,392.0,General Pública
+15.0,395.0,General Pública
+16.0,399.0,General Pública
+17.0,402.0,General Pública
+18.0,405.0,General Pública
+19.0,408.0,General Pública
+20.0,410.0,General Pública
+21.0,413.0,General Pública
+22.0,416.0,General Pública
+23.0,418.0,General Pública
+24.0,421.0,General Pública
+25.0,424.0,General Pública
+26.0,426.0,General Pública
+27.0,429.0,General Pública
+28.0,431.0,General Pública
+29.0,434.0,General Pública
+30.0,436.0,General Pública
+31.0,439.0,General Pública
+32.0,441.0,General Pública
+33.0,443.0,General Pública
+34.0,446.0,General Pública
+35.0,448.0,General Pública
+36.0,451.0,General Pública
+37.0,453.0,General Pública
+38.0,456.0,General Pública
+39.0,458.0,General Pública
+40.0,460.0,General Pública
+41.0,463.0,General Pública
+42.0,465.0,General Pública
+43.0,468.0,General Pública
+44.0,470.0,General Pública
+45.0,472.0,General Pública
+46.0,474.0,General Pública
+47.0,477.0,General Pública
+48.0,479.0,General Pública
+49.0,482.0,General Pública
+50.0,485.0,General Pública
+51.0,487.0,General Pública
+52.0,489.0,General Pública
+53.0,492.0,General Pública
+54.0,495.0,General Pública
+55.0,497.0,General Pública
+56.0,500.0,General Pública
+57.0,503.0,General Pública
+58.0,505.0,General Pública
+59.0,508.0,General Pública
+60.0,511.0,General Pública
+61.0,513.0,General Pública
+62.0,516.0,General Pública
+63.0,519.0,General Pública
+64.0,523.0,General Pública
+65.0,526.0,General Pública
+66.0,529.0,General Pública
+67.0,532.0,General Pública
+68.0,536.0,General Pública
+69.0,539.0,General Pública
+70.0,542.0,General Pública
+71.0,546.0,General Pública
+72.0,550.0,General Pública
+73.0,553.0,General Pública
+74.0,557.0,General Pública
+75.0,561.0,General Pública
+76.0,566.0,General Pública
+77.0,570.0,General Pública
+78.0,574.0,General Pública
+79.0,579.0,General Pública
+80.0,583.0,General Pública
+81.0,588.0,General Pública
+82.0,593.0,General Pública
+83.0,598.0,General Pública
+84.0,604.0,General Pública
+85.0,610.0,General Pública
+86.0,616.0,General Pública
+87.0,622.0,General Pública
+88.0,629.0,General Pública
+89.0,636.0,General Pública
+90.0,643.0,General Pública
+91.0,652.0,General Pública
+92.0,661.0,General Pública
+93.0,671.0,General Pública
+94.0,682.0,General Pública
+95.0,695.0,General Pública
+96.0,709.0,General Pública
+97.0,726.0,General Pública
+98.0,749.0,General Pública
+99.0,781.0,General Pública
+0.0,200.0,Técnica Pública
+1.0,264.0,Técnica Pública
+2.0,312.0,Técnica Pública
+3.0,326.0,Técnica Pública
+4.0,337.0,Técnica Pública
+5.0,345.0,Técnica Pública
+6.0,352.0,Técnica Pública
+7.0,358.0,Técnica Pública
+8.0,364.0,Técnica Pública
+9.0,369.0,Técnica Pública
+10.0,373.0,Técnica Pública
+11.0,377.0,Técnica Pública
+12.0,381.7999999999997,Técnica Pública
+13.0,385.0,Técnica Pública
+14.0,389.0,Técnica Pública
+15.0,392.0,Técnica Pública
+16.0,395.0,Técnica Pública
+17.0,398.0,Técnica Pública
+18.0,401.0,Técnica Pública
+19.0,404.0,Técnica Pública
+20.0,407.0,Técnica Pública
+21.0,410.0,Técnica Pública
+22.0,413.0,Técnica Pública
+23.0,416.0,Técnica Pública
+24.0,419.0,Técnica Pública
+25.0,421.0,Técnica Pública
+26.0,424.0,Técnica Pública
+27.0,427.0,Técnica Pública
+28.0,429.0,Técnica Pública
+29.0,432.0,Técnica Pública
+30.0,434.0,Técnica Pública
+31.0,436.0,Técnica Pública
+32.0,439.0,Técnica Pública
+33.0,441.0,Técnica Pública
+34.0,443.0,Técnica Pública
+35.0,445.0,Técnica Pública
+36.0,448.0,Técnica Pública
+37.0,450.0,Técnica Pública
+38.0,453.0,Técnica Pública
+39.0,455.0,Técnica Pública
+40.0,458.0,Técnica Pública
+41.0,460.0,Técnica Pública
+42.0,462.0,Técnica Pública
+43.0,465.0,Técnica Pública
+44.0,467.0,Técnica Pública
+45.0,469.0,Técnica Pública
+46.0,471.0,Técnica Pública
+47.0,474.0,Técnica Pública
+48.0,477.0,Técnica Pública
+49.0,479.0,Técnica Pública
+50.0,482.0,Técnica Pública
+51.0,484.0,Técnica Pública
+52.0,487.0,Técnica Pública
+53.0,490.0,Técnica Pública
+54.0,492.0,Técnica Pública
+55.0,495.0,Técnica Pública
+56.0,498.0,Técnica Pública
+57.0,501.0,Técnica Pública
+58.0,503.0,Técnica Pública
+59.0,506.0,Técnica Pública
+60.0,509.0,Técnica Pública
+61.0,512.0,Técnica Pública
+62.0,515.0,Técnica Pública
+63.0,518.0,Técnica Pública
+64.0,521.0,Técnica Pública
+65.0,523.0,Técnica Pública
+66.0,527.0,Técnica Pública
+67.0,530.0,Técnica Pública
+68.0,533.0,Técnica Pública
+69.0,536.0,Técnica Pública
+70.0,540.0,Técnica Pública
+71.0,543.0,Técnica Pública
+72.0,546.0,Técnica Pública
+73.0,550.0,Técnica Pública
+74.0,554.0,Técnica Pública
+75.0,558.0,Técnica Pública
+76.0,562.0,Técnica Pública
+77.0,566.0,Técnica Pública
+78.0,570.0,Técnica Pública
+79.0,574.3500000000022,Técnica Pública
+80.0,579.0,Técnica Pública
+81.0,584.0,Técnica Pública
+82.0,589.0,Técnica Pública
+83.0,594.0,Técnica Pública
+84.0,600.0,Técnica Pública
+85.0,606.0,Técnica Pública
+86.0,611.0,Técnica Pública
+87.0,618.0,Técnica Pública
+88.0,625.0,Técnica Pública
+89.0,633.0,Técnica Pública
+90.0,641.0,Técnica Pública
+91.0,649.0,Técnica Pública
+92.0,657.7999999999993,Técnica Pública
+93.0,667.0,Técnica Pública
+94.0,678.0,Técnica Pública
+95.0,691.0,Técnica Pública
+96.0,706.0,Técnica Pública
+97.0,723.0,Técnica Pública
+98.0,748.0,Técnica Pública
+99.0,779.0,Técnica Pública
+0.0,200.0,Telesecundaria
+1.0,280.0,Telesecundaria
+2.0,309.0,Telesecundaria
+3.0,324.0,Telesecundaria
+4.0,335.0,Telesecundaria
+5.0,343.0,Telesecundaria
+6.0,350.0,Telesecundaria
+7.0,355.0,Telesecundaria
+8.0,361.0,Telesecundaria
+9.0,366.0,Telesecundaria
+10.0,370.0,Telesecundaria
+11.0,374.0,Telesecundaria
+12.0,378.0,Telesecundaria
+13.0,381.0,Telesecundaria
+14.0,385.0,Telesecundaria
+15.0,388.0,Telesecundaria
+16.0,391.0,Telesecundaria
+17.0,394.0,Telesecundaria
+18.0,397.0,Telesecundaria
+19.0,400.0,Telesecundaria
+20.0,403.0,Telesecundaria
+21.0,406.0,Telesecundaria
+22.0,408.0,Telesecundaria
+23.0,411.0,Telesecundaria
+24.0,413.0,Telesecundaria
+25.0,416.0,Telesecundaria
+26.0,418.0,Telesecundaria
+27.0,421.0,Telesecundaria
+28.0,424.0,Telesecundaria
+29.0,426.0,Telesecundaria
+30.0,429.0,Telesecundaria
+31.0,431.0,Telesecundaria
+32.0,433.0,Telesecundaria
+33.0,436.0,Telesecundaria
+34.0,438.0,Telesecundaria
+35.0,441.0,Telesecundaria
+36.0,443.0,Telesecundaria
+37.0,445.0,Telesecundaria
+38.0,448.0,Telesecundaria
+39.0,450.0,Telesecundaria
+40.0,453.0,Telesecundaria
+41.0,455.0,Telesecundaria
+42.0,458.0,Telesecundaria
+43.0,460.0,Telesecundaria
+44.0,462.0,Telesecundaria
+45.0,465.0,Telesecundaria
+46.0,468.0,Telesecundaria
+47.0,470.0,Telesecundaria
+48.0,473.0,Telesecundaria
+49.0,475.0,Telesecundaria
+50.0,478.0,Telesecundaria
+51.0,480.0,Telesecundaria
+52.0,483.0,Telesecundaria
+53.0,485.0,Telesecundaria
+54.0,488.0,Telesecundaria
+55.0,491.0,Telesecundaria
+56.0,493.0,Telesecundaria
+57.0,496.0,Telesecundaria
+58.0,498.0,Telesecundaria
+59.0,501.0,Telesecundaria
+60.0,504.0,Telesecundaria
+61.0,507.0,Telesecundaria
+62.0,510.0,Telesecundaria
+63.0,513.0,Telesecundaria
+64.0,516.0,Telesecundaria
+65.0,519.0,Telesecundaria
+66.0,522.0,Telesecundaria
+67.0,525.0,Telesecundaria
+68.0,528.0,Telesecundaria
+69.0,531.0,Telesecundaria
+70.0,535.0,Telesecundaria
+71.0,538.0,Telesecundaria
+72.0,541.0,Telesecundaria
+73.0,545.0,Telesecundaria
+74.0,548.0,Telesecundaria
+75.0,552.0,Telesecundaria
+76.0,556.0,Telesecundaria
+77.0,561.0,Telesecundaria
+78.0,565.0,Telesecundaria
+79.0,569.0,Telesecundaria
+80.0,574.0,Telesecundaria
+81.0,579.0,Telesecundaria
+82.0,584.0,Telesecundaria
+83.0,589.0,Telesecundaria
+84.0,595.0,Telesecundaria
+85.0,600.0,Telesecundaria
+86.0,606.0,Telesecundaria
+87.0,612.0,Telesecundaria
+88.0,620.0,Telesecundaria
+89.0,628.0,Telesecundaria
+90.0,636.0,Telesecundaria
+91.0,644.0,Telesecundaria
+92.0,653.0,Telesecundaria
+93.0,663.0,Telesecundaria
+94.0,676.0,Telesecundaria
+95.0,689.0,Telesecundaria
+96.0,704.0,Telesecundaria
+97.0,723.0,Telesecundaria
+98.0,748.0,Telesecundaria
+99.0,785.9300000000003,Telesecundaria
+0.0,200.0,Comunitaria
+1.0,200.0,Comunitaria
+2.0,237.95999999999998,Comunitaria
+3.0,250.94,Comunitaria
+4.0,268.84000000000003,Comunitaria
+5.0,278.9,Comunitaria
+6.0,287.0,Comunitaria
+7.0,294.86,Comunitaria
+8.0,302.0,Comunitaria
+9.0,304.0,Comunitaria
+10.0,307.0,Comunitaria
+11.0,312.0,Comunitaria
+12.0,315.0,Comunitaria
+13.0,321.0,Comunitaria
+14.0,324.0,Comunitaria
+15.0,327.7,Comunitaria
+16.0,330.68,Comunitaria
+17.0,334.0,Comunitaria
+18.0,341.0,Comunitaria
+19.0,344.0,Comunitaria
+20.0,346.6,Comunitaria
+21.0,350.0,Comunitaria
+22.0,353.0,Comunitaria
+23.0,354.0,Comunitaria
+24.0,356.0,Comunitaria
+25.0,358.5,Comunitaria
+26.0,362.0,Comunitaria
+27.0,364.46000000000004,Comunitaria
+28.0,366.44000000000005,Comunitaria
+29.0,368.0,Comunitaria
+30.0,370.0,Comunitaria
+31.0,372.0,Comunitaria
+32.0,375.0,Comunitaria
+33.0,377.0,Comunitaria
+34.0,379.0,Comunitaria
+35.0,381.0,Comunitaria
+36.0,383.0,Comunitaria
+37.0,384.0,Comunitaria
+38.0,387.24,Comunitaria
+39.0,390.0,Comunitaria
+40.0,392.0,Comunitaria
+41.0,394.0,Comunitaria
+42.0,396.0,Comunitaria
+43.0,398.0,Comunitaria
+44.0,400.0,Comunitaria
+45.0,402.0,Comunitaria
+46.0,404.0,Comunitaria
+47.0,407.0,Comunitaria
+48.0,409.0,Comunitaria
+49.0,411.0,Comunitaria
+50.0,414.0,Comunitaria
+51.0,415.0,Comunitaria
+52.0,416.0,Comunitaria
+53.0,419.0,Comunitaria
+54.0,421.0,Comunitaria
+55.0,422.0,Comunitaria
+56.0,425.0,Comunitaria
+57.0,427.0,Comunitaria
+58.0,430.0,Comunitaria
+59.0,433.0,Comunitaria
+60.0,433.79999999999995,Comunitaria
+61.0,436.0,Comunitaria
+62.0,439.0,Comunitaria
+63.0,441.0,Comunitaria
+64.0,443.0,Comunitaria
+65.0,445.0,Comunitaria
+66.0,447.0,Comunitaria
+67.0,450.0,Comunitaria
+68.0,453.0,Comunitaria
+69.0,455.0,Comunitaria
+70.0,457.0,Comunitaria
+71.0,459.0,Comunitaria
+72.0,462.0,Comunitaria
+73.0,465.0,Comunitaria
+74.0,468.0,Comunitaria
+75.0,470.5,Comunitaria
+76.0,473.0,Comunitaria
+77.0,476.0,Comunitaria
+78.0,479.0,Comunitaria
+79.0,482.4200000000001,Comunitaria
+80.0,485.4000000000001,Comunitaria
+81.0,489.0,Comunitaria
+82.0,493.0,Comunitaria
+83.0,496.0,Comunitaria
+84.0,500.0,Comunitaria
+85.0,503.5999999999999,Comunitaria
+86.0,509.0,Comunitaria
+87.0,516.26,Comunitaria
+88.0,520.0,Comunitaria
+89.0,525.22,Comunitaria
+90.0,532.4000000000001,Comunitaria
+91.0,539.3600000000001,Comunitaria
+92.0,551.1600000000001,Comunitaria
+93.0,556.1400000000001,Comunitaria
+94.0,563.1199999999999,Comunitaria
+95.0,575.0,Comunitaria
+96.0,582.0799999999999,Comunitaria
+97.0,597.2399999999998,Comunitaria
+98.0,613.0,Comunitaria
+99.0,645.0,Comunitaria
+0.0,200.0,Privada
+1.0,347.0,Privada
+2.0,371.0,Privada
+3.0,385.0,Privada
+4.0,396.0,Privada
+5.0,406.0,Privada
+6.0,413.0,Privada
+7.0,421.0,Privada
+8.0,427.0,Privada
+9.0,433.0,Privada
+10.0,439.0,Privada
+11.0,445.0,Privada
+12.0,449.0,Privada
+13.0,454.0,Privada
+14.0,459.0,Privada
+15.0,464.0,Privada
+16.0,468.0,Privada
+17.0,473.0,Privada
+18.0,477.0,Privada
+19.0,480.0,Privada
+20.0,484.0,Privada
+21.0,488.0,Privada
+22.0,492.0,Privada
+23.0,496.0,Privada
+24.0,499.0,Privada
+25.0,503.0,Privada
+26.0,507.0,Privada
+27.0,510.0,Privada
+28.0,513.0,Privada
+29.0,517.0,Privada
+30.0,519.0,Privada
+31.0,523.0,Privada
+32.0,526.0,Privada
+33.0,529.0,Privada
+34.0,532.0,Privada
+35.0,536.0,Privada
+36.0,539.0,Privada
+37.0,542.0,Privada
+38.0,546.0,Privada
+39.0,549.0,Privada
+40.0,552.0,Privada
+41.0,555.0,Privada
+42.0,558.0,Privada
+43.0,561.0,Privada
+44.0,565.0,Privada
+45.0,568.0,Privada
+46.0,572.0,Privada
+47.0,576.0,Privada
+48.0,579.0,Privada
+49.0,583.0,Privada
+50.0,585.0,Privada
+51.0,588.0,Privada
+52.0,592.0,Privada
+53.0,595.0,Privada
+54.0,599.0,Privada
+55.0,602.0,Privada
+56.0,605.0,Privada
+57.0,608.0,Privada
+58.0,611.0,Privada
+59.0,615.0,Privada
+60.0,618.0,Privada
+61.0,621.0,Privada
+62.0,625.0,Privada
+63.0,628.0,Privada
+64.0,632.0,Privada
+65.0,635.0,Privada
+66.0,639.0,Privada
+67.0,644.0,Privada
+68.0,647.0,Privada
+69.0,652.0,Privada
+70.0,656.0,Privada
+71.0,660.0,Privada
+72.0,664.0,Privada
+73.0,669.0,Privada
+74.0,673.0,Privada
+75.0,677.0,Privada
+76.0,681.0,Privada
+77.0,687.0,Privada
+78.0,691.0,Privada
+79.0,696.0,Privada
+80.0,700.0,Privada
+81.0,705.0,Privada
+82.0,710.0,Privada
+83.0,716.0,Privada
+84.0,721.0,Privada
+85.0,726.0,Privada
+86.0,732.0,Privada
+87.0,737.0,Privada
+88.0,745.0,Privada
+89.0,752.0,Privada
+90.0,758.0,Privada
+91.0,766.0,Privada
+92.0,773.0,Privada
+93.0,781.0,Privada
+94.0,789.0,Privada
+95.0,799.0,Privada
+96.0,800.0,Privada
+97.0,800.0,Privada
+98.0,800.0,Privada
+99.0,800.0,Privada
