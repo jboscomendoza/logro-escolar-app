@@ -22,3 +22,30 @@ PAB_48;¿Cuántos libros hay en tu casa además de los que usas en la escuela? N
 PAB_52;Además de ir a la escuela, ¿asistes a alguna clase de idiomas (inglés u otro)?
 PAB_53;Sin contar las clases de idiomas, ¿tomas fuera de la escuela alguna clase que te ayude en las materias (Matemáticas, Español, etcétera)?
 PAB_85;¿Cuánto tiempo tardas en llegar de tu casa a la escuela?
+
+
+SERV;Tipo de servicio
+TAM_LOC_SEC;Tamaño de localidad
+SEXO;Sexo
+EDAD_ACC;Edad
+SAB_10;¿Cuántos cuartos se utilizan para dormir en tu casa?
+SAB_11;¿Hasta qué nivel estudió tu papá?
+SAB_12;¿Hasta qué nivel estudió tu mamá?
+SAB_14;¿Sabes hablar una lengua indígena?
+SAB_16;¿Cuántos años fuiste a preescolar?
+SAB_22;¿Cuántos focos hay en tu casa (incluyendo los de las lámparas)?
+SAB_24;¿Tienes los siguientes servicios o aparatos en tu casa? Luz eléctrica
+SAB_25;¿Tienes los siguientes servicios o aparatos en tu casa? Agua potable
+SAB_26;¿Tienes los siguientes servicios o aparatos en tu casa? Drenaje
+SAB_29;¿Tienes los siguientes servicios o aparatos en tu casa? Refrigerador
+SAB_31;¿Tienes los siguientes servicios o aparatos en tu casa? Estufa de gas o estufa eléctrica
+SAB_34;¿Tienes los siguientes servicios o aparatos en tu casa? Acceso a Internet
+SAB_35;¿Tienes los siguientes servicios o aparatos en tu casa? Teléfono móvil o celular
+SAB_38;Del siguiente listado de bienes, ¿cuántos hay en funcionamiento en tu casa? Computadora o laptop
+SAB_39;Del siguiente listado de bienes, ¿cuántos hay en funcionamiento en tu casa? Televisor o pantalla plana
+SAB_40;Del siguiente listado de bienes, ¿cuántos hay en funcionamiento en tu casa? Automóvil o camioneta
+SAB_48;¿Cuántos libros hay en tu casa además de los que usas en la escuela? No incluyas revistas ni periódicos.
+SAB_52;Además de ir a la escuela, ¿asistes a alguna clase de idiomas (inglés u otro)?
+SAB_53;Sin contar las clases de idiomas, ¿tomas fuera de la escuela alguna clase que te ayude en las materias (Matemáticas, Español, etcétera)?
+SAB_85;¿Cuánto tiempo tardas en llegar de tu casa a la escuela?
+
