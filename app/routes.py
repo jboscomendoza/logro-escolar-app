@@ -1,6 +1,6 @@
 from flask import render_template, request, redirect, url_for
 from app import app
-from app.forms import Atributos
+from app.forms import Atributos, SecForm
 
 import numpy as np
 import pandas as pd
@@ -81,6 +81,18 @@ def inicio():
     
     return render_template("index.html", form=form)
 
+
+@app.route('/secundaria/', methods=["GET", "POST"])
+def secundaria():
+    form = SecForm()
+
+    if form.validate_on_submit():
+        data = request.form.to_dict()
+        for i in ["csrf_token", "submit"]:
+            data.pop(i)
+        return redirect(url_for("resultado", atributos=data))
+    
+    return render_template("secundaria.html", form=form)
 
 @app.route("/resultado/<atributos>", methods=["GET"])
 def resultado(atributos):

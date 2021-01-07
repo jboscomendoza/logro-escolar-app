@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container">
+<h1> Secundaria- contexto del estudiante</h1>
+
+<form method="post">
+{{ form.hidden_tag() }}
+
+    <h3 class="text-light bg-dark">
+        Atributos del estudiante
+    </h3>
+    <div class="container">
+        <div class="row">
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SEXO.label }}
+                {{ form.SEXO(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.EDAD_ACC.label }}
+                {{ form.EDAD_ACC(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_14.label }}
+                {{ form.SAB_14(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_16.label }}
+                {{ form.SAB_16(class_="form-control") }}
+            </div>
+        </div>
+    </div>
+
+    <h3 class="text-light bg-dark">
+        Atributos de los padres
+    </h3>
+    <div class="container">
+        <div class="row">
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_11.label }}
+                {{ form.SAB_11(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_12.label }}
+                {{ form.SAB_12(class_="form-control") }}
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+        <h3 class="col-12 text-light bg-dark">
+            Atributos de la localidad
+        </h3>
+    </div>
+        <div class="row">
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SERV.label }}
+                {{ form.SERV(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.TAM_LOC_SEC.label }}
+                {{ form.TAM_LOC_SEC(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_85.label }}
+                {{ form.SAB_85(class_="form-control") }}
+            </div>
+        </div>
+    </div>
+
+    <h3 class="text-light bg-dark">
+        Bienes y servicios en casa
+    </h3>
+    <div class="container">
+        <div class="row">
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_10.label }}
+                {{ form.SAB_10(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_22.label }}
+                {{ form.SAB_22(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_24.label }}
+                {{ form.SAB_24(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_25.label }}
+                {{ form.SAB_25(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_26.label }}
+                {{ form.SAB_26(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_29.label }}
+                {{ form.SAB_29(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_31.label }}
+                {{ form.SAB_31(class_="form-control d-flex flex-wrap align-content-stretch") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_40.label }}
+                {{ form.SAB_40(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_35.label }}
+                {{ form.SAB_35(class_="form-control") }}
+            </div>
+        </div>
+    </div>
+
+    <h3 class="text-light bg-dark">
+        Recursos para el aprendizaje en casa
+    </h3>
+    <div class="container">
+        <div class="row">
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_34.label }}
+                {{ form.SAB_34(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_38.label }}
+                {{ form.SAB_38(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_39.label }}
+                {{ form.SAB_39(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_48.label }}
+                {{ form.SAB_48(class_="form-control") }}
+            </div>
+        </div>
+    </div>
+
+    <h3 class="text-light bg-dark">
+        Actividades extra curriculares
+    </h3>
+    <div class="container">
+        <div class="row">
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_52.label }}
+                {{ form.SAB_52(class_="form-control") }}
+            </div>
+            <div class="form-group col-6 col-lg-4 d-flex flex-wrap align-content-end">
+                {{ form.SAB_53.label }}
+                {{ form.SAB_53(class_="form-control") }}
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <button type="button" class="btn btn-primary btn-lg btn-block">
+            {{ form.submit(class="btn btn-primary") }}
+        </button>
+    </div>
+
+</form>
+
+</div>
+{% endblock %}
