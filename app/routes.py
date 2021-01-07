@@ -13,22 +13,36 @@ from bokeh.models import ColumnDataSource, CDSView, GroupFilter
 from bokeh.embed import components
 
 
-modelo_lyc = CatBoostRegressor()
-modelo_lyc.load_model("model_lyc.cbm")
-modelo_mat = CatBoostRegressor()
-modelo_mat.load_model("model_mat.cbm")
+MODELOS = {
+    "primaria":{
+        "LYC": CatBoostRegressor().load_model("model_lyc.cbm"),
+        "MAT": CatBoostRegressor().load_model("model_mat.cbm"),
+    },
+    "secundaria":{
+        "LYC": CatBoostRegressor().load_model("model_sec_lyc.cbm"),
+        "MAT": CatBoostRegressor().load_model("model_sec_mat.cbm"),
+    }
+}
 
-CUANTILES_LYC = pd.read_csv("cuantiles_lyc.csv")
-CUANTILES_MAT = pd.read_csv("cuantiles_mat.csv")
+CUANTILES = {
+    "primaria":{
+        "LYC":pd.read_csv("cuantiles_lyc.csv"),
+        "MAT":pd.read_csv("cuantiles_mat.csv"),
+    },
+    "secundaria":{
+        "LYC":pd.read_csv("cuantiles_sec_lyc.csv"),
+        "MAT":pd.read_csv("cuantiles_sec_mat.csv"),
+    }
+}
 
-COLORES = ["#000000", "#7d3c98", "#f39c12", "#3498db", "#2ecc71"]
+COLORES = [
+    "#000000", "#7d3c98", "#f39c12",
+    "#3498db", "#2ecc71", "#f72585"
+]
 
 
-def comparar_cuantiles(score, asignatura):
-    if asignatura == "MAT":
-        df = CUANTILES_MAT
-    elif asignatura == "LYC":
-        df = CUANTILES_LYC
+def comparar_cuantiles(score, asignatura, grado):    
+    df = CUANTILES[grado][asignatura]
     servicios = df["SERV"].unique()
     
     lista_cuantiles = []
@@ -45,11 +59,8 @@ def comparar_cuantiles(score, asignatura):
     return lista_cuantiles
 
 
-def crear_plot_dist(asignatura, score_actual):
-    if asignatura == "MAT":
-        df = CUANTILES_MAT
-    elif asignatura == "LYC":
-        df = CUANTILES_LYC
+def crear_plot_dist(asignatura, score_actual, grado):
+    df = CUANTILES[grado][asignatura]
     
     plot_dist = figure(plot_width=450, plot_height=500, toolbar_location="below")
     
@@ -75,9 +86,10 @@ def inicio():
 
     if form.validate_on_submit():
         data = request.form.to_dict()
+        grado = "primaria"
         for i in ["csrf_token", "submit"]:
             data.pop(i)
-        return redirect(url_for("resultado", atributos=data))
+        return redirect(url_for("resultado", grado=grado, atributos=data))
     
     return render_template("index.html", form=form)
 
@@ -88,14 +100,16 @@ def secundaria():
 
     if form.validate_on_submit():
         data = request.form.to_dict()
+        grado = "secundaria"
         for i in ["csrf_token", "submit"]:
             data.pop(i)
-        return redirect(url_for("resultado", atributos=data))
+        return redirect(url_for("resultado", grado=grado, atributos=data))
     
     return render_template("secundaria.html", form=form)
 
-@app.route("/resultado/<atributos>", methods=["GET"])
-def resultado(atributos):
+
+@app.route("/resultado/<grado>/<atributos>", methods=["GET"])
+def resultado(grado, atributos):
     data_atr = eval(atributos)
 
     nombres = list(data_atr.keys())
@@ -103,20 +117,20 @@ def resultado(atributos):
     data_list = [data_atr[i] for i in nombres]
 
     resultado = {}
-    resultado["LYC"] = modelo_lyc.predict(data_list)
-    resultado["MAT"] = modelo_mat.predict(data_list)
+    resultado["LYC"] = MODELOS[grado]["LYC"].predict(data_list)
+    resultado["MAT"] = MODELOS[grado]["MAT"].predict(data_list)
 
-    return redirect(url_for("resumen", resultado=resultado))
+    return redirect(url_for("resumen", grado=grado, resultado=resultado))
 
 
-@app.route("/resumen/<resultado>", methods=["GET"])
-def resumen(resultado):
+@app.route("/resumen/<grado>/<resultado>/", methods=["GET"])
+def resumen(grado, resultado):
     resultado = eval(resultado)
-    comp_mat = comparar_cuantiles(resultado["MAT"], "MAT")
-    comp_lyc = comparar_cuantiles(resultado["LYC"], "LYC")
+    comp_mat = comparar_cuantiles(resultado["MAT"], "MAT", grado)
+    comp_lyc = comparar_cuantiles(resultado["LYC"], "LYC", grado)
     
-    plot_lyc = crear_plot_dist("LYC", resultado["LYC"])
-    plot_mat = crear_plot_dist("MAT", resultado["MAT"])
+    plot_lyc = crear_plot_dist("LYC", resultado["LYC"], grado)
+    plot_mat = crear_plot_dist("MAT", resultado["MAT"], grado)
     
     script_lyc, div_lyc = components(plot_lyc)
     script_mat, div_mat = components(plot_mat)
