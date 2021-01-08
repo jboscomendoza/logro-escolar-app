@@ -80,8 +80,13 @@ def crear_plot_dist(asignatura, score_actual, grado):
 
 
 @app.route('/', methods=["GET", "POST"])
-@app.route('/index', methods=["GET", "POST"])
+@app.route('/index/', methods=["GET", "POST"])
 def inicio():
+    return render_template("index.html")
+
+
+@app.route('/primaria/', methods=["GET", "POST"])
+def primaria():
     form = Atributos()
 
     if form.validate_on_submit():
@@ -91,7 +96,7 @@ def inicio():
             data.pop(i)
         return redirect(url_for("resultado", grado=grado, atributos=data))
     
-    return render_template("index.html", form=form)
+    return render_template("primaria.html", form=form)
 
 
 @app.route('/secundaria/', methods=["GET", "POST"])
