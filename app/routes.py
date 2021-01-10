@@ -9,7 +9,7 @@ from catboost import CatBoostRegressor
 from bokeh.plotting import figure, show
 from bokeh.io import output_file
 from bokeh.layouts import column
-from bokeh.models import ColumnDataSource, CDSView, GroupFilter
+from bokeh.models import ColumnDataSource, CDSView, GroupFilter, Legend
 from bokeh.embed import components
 
 
@@ -62,20 +62,34 @@ def comparar_cuantiles(score, asignatura, grado):
 def crear_plot_dist(asignatura, score_actual, grado):
     df = CUANTILES[grado][asignatura]
     
-    plot_dist = figure(plot_width=450, plot_height=500, toolbar_location="below")
+    plot_dist = figure(
+        plot_height=800, 
+    sizing_mode="scale_width", toolbar_location="below")
     
+    etiquetas = []
+
     for i, j in zip(df["SERV"].unique(), COLORES):
         fuente = ColumnDataSource(df[df["SERV"] == i])
-        plot_dist.line("decil", asignatura, source=fuente, color = j, legend_label=i)
+        elem = plot_dist.line("decil", asignatura, source=fuente, 
+        color = j)
+        etiquetas.append((i, [elem]))
     
     plot_dist.ray(
-        x=[0], y=[score_actual], length=100, angle=0, 
+        x=[0], y=[score_actual], length=100, angle=0,
         line_width=1.5, color="#e74c3c", line_dash="dashed",
         legend_label="Puntaje obtenido"
     )
-
-    plot_dist.legend.location = 'top_left'
-
+    plot_dist.legend.location = "top_left"
+    plot_dist.legend.orientation = "horizontal"
+    
+    for i in [(0, 3), (3, 6)]:
+        leyenda = Legend(items=etiquetas[i[0]:i[1]])
+        leyenda.click_policy= "hide"
+        leyenda.orientation = "horizontal"
+        leyenda.border_line_width = 0
+        leyenda.margin = -5
+        plot_dist.add_layout(leyenda, 'below')
+    
     return plot_dist
 
 
